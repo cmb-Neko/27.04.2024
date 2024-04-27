@@ -3,7 +3,17 @@
 using namespace std;
 
 int main() {
-	int num_1, num_2;
-	cin >> num_1 >> num_2;
-	(num_1 > num_2) ? cout << "first number is bigger" << endl : cout << "second number is bigger" << endl;
+	int num;
+	
+	cin >> num;
+
+	if (num < 0) {
+		cout << "Number is smaler then zero" << endl;
+	}
+	else if (num > 0) {
+		cout << "Number is bigger then zero" << endl;
+	}
+	else {
+		cout << "Number is             zero" << endl;
+	}
 }
